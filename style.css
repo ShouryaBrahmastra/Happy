@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+}
+
+.navbar a {
+    color: black;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s ease all;
+    
+}
+a:hover {
+    border-radius: 15px;
+    color: #111;
+    background: #df5555;
+    box-shadow: 0 0 50px #9048ee;
+}
+
+/* Style for the cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    width: 100%;
+    max-width: 350px; /* Adjust as needed for larger screens */
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the "Learn More" button */
+.card button {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 0 5px 50px 0 cyan inset,0 5px 50px 0 cyan,
+    0 5px 50px 0 cyan inset,0 5px 50px 0 cyan;
+    text-shadow: 0 0 5px rgb(224, 30, 175);
+}
+/* Style for the footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    position: fixed;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+    .column {
+        width: 50%; /* Display two columns side by side */
+    }
+}
